@@ -33,6 +33,10 @@ namespace TodoApi
 				app.UseDeveloperExceptionPage();
 			}
 
+			// serve static 
+			app.UseStaticFiles();
+			app.UseDefaultFiles();
+
 			app.UseHttpsRedirection();
 
 			app.UseRouting();
