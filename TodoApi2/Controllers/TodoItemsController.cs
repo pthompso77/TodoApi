@@ -12,7 +12,7 @@ namespace TodoApi.Controllers
 {
     [Route("api/TodoItems")] // by convention is the controller class name minus the "Controller" suffix
     [ApiController]
-    public class TodoItemsController : ControllerBase
+    public class TodoItemsController : ControllerBase //without view support
     {
         private readonly TodoContext _context;
 
